@@ -137,6 +137,16 @@ The training script uses a representative sample from the large CSV so retrainin
 
 ## Model Notes
 
+The score prediction model is a scikit-learn `HistGradientBoostingRegressor`.
+
+The grade prediction model is selected automatically during training from:
+
+- `LogisticRegression`
+- `HistGradientBoostingClassifier`
+- `ScoreThresholdClassifier`, a custom classifier that wraps `HistGradientBoostingRegressor`
+
+The best grade classifier is chosen using cross-validation balanced accuracy, then test balanced accuracy, then test accuracy.
+
 Exact grade accuracy is limited because the model only receives three input features, but it predicts several grade classes:
 
 ```text
