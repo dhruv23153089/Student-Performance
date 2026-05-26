@@ -1,0 +1,78 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg-top: #efe7ff;
+  --bg-bottom: #e3d7ff;
+  --text-strong: #21173f;
+  --muted: #6d6094;
+  --accent-strong: #7c4dff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--text-strong);
+  background:
+    radial-gradient(circle at top left, rgba(152, 101, 255, 0.22), transparent 20%),
+    radial-gradient(circle at bottom right, rgba(108, 76, 170, 0.16), transparent 24%),
+    linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid rgba(124, 77, 255, 0.28);
+  outline-offset: 2px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: -0.03em;
+}
+
+h1 {
+  font-size: clamp(1.7rem, 3.3vw, 2.7rem);
+  line-height: 1.06;
+  max-width: 18ch;
+}
+
+h2 {
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+#root {
+  min-height: 100vh;
+}

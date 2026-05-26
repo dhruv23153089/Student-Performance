@@ -1,0 +1,14 @@
+{
+  "name": "student-performance-frontend-shell",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm --prefix \"./Student Performance\" install",
+    "dev": "npm --prefix \"./Student Performance\" run dev",
+    "build": "npm --prefix \"./Student Performance\" run build",
+    "preview": "npm --prefix \"./Student Performance\" run preview",
+    "lint": "npm --prefix \"./Student Performance\" run lint"
+  },
+  "dependencies": {
+    "axios": "^1.13.6"
+  }
+}
