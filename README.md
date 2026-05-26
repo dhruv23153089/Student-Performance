@@ -144,15 +144,3 @@ A+, A, B+, B, C+, C, D, F
 ```
 
 The predicted score and performance band are usually more useful than treating the exact grade as perfect. Accuracy can improve if more academic features are added, such as previous scores, assignment results, exam history, or other learning indicators.
-
-## GitHub Notes
-
-Do not push generated dependency folders:
-
-```text
-.venv/
-node_modules/
-__pycache__/
-```
-
-The saved model files are small after retraining, so they can be included if you want the app to run immediately after cloning. Otherwise, ignore `backend/model/*.pkl` and ask users to run `python backend/train.py`.
