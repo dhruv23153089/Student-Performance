@@ -3,7 +3,7 @@ import axios from "axios";
 import "./App.css";
 import bookImage from "./assets/book.png";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = import.meta.env.VITE_API_BASE || "http://127.0.0.1:8000";
 
 const defaultForm = {
   weekly_self_study_hours: 12,
